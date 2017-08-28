@@ -13,3 +13,13 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+//= require jquery
+//= require bootstrap
+//= require jquery.flexslider-min
+//= require lightbox
+//= require masonry/jquery.masonry
+//= require twitterfetcher-17.0.0.min
+//= require ytplayer.min
+//= require smooth-scroll.min
+//= require parallax
+//= require scripts
