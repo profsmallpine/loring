@@ -1392,9 +1392,8 @@ nav .cart-overview a {
   }
   .module.widget-handle {
     border-left: none;
-    border-top: 1px solid #ccc;
-    line-height: 40px;
-    min-height: 40px;
+    line-height: 56px;
+    min-height: 54px;
   }
   .module.widget-handle .menu {
     line-height: 40px;
