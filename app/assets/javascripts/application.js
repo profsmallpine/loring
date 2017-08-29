@@ -19,7 +19,7 @@
 //= require lightbox
 //= require masonry/jquery.masonry
 //= require twitterfetcher-17.0.0.min
-//= require ytplayer.min
+//= require jquery.mb.YTPlayer-3.0.20.min
 //= require smooth-scroll.min
 //= require parallax
 //= require scripts
