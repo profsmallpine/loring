@@ -566,7 +566,7 @@ ul.lead li {
   color: #e31d3b !important;
 }
 .color-white {
-  color: #fff;
+  color: #fff !important;
 }
 /*!---------- 5. SECTIONS ----------*/
 section,
@@ -1740,6 +1740,7 @@ input[type="password"] {
 .image-bg.bg-light button.transparent {
   border-color: #292929;
 }
+textarea.transparent,
 input.transparent,
 button.transparent {
   background: none;
@@ -1789,18 +1790,22 @@ textarea:focus {
   color: #777;
   font-size: 11px;
 }
+textarea.transparent::-webkit-input-placeholder,
 input.transparent::-webkit-input-placeholder,
 button.transparent::-webkit-input-placeholder {
   color: #fff;
 }
+textarea.transparent::-moz-input-placeholder,
 input.transparent::-moz-input-placeholder,
 button.transparent::-moz-input-placeholder {
   color: #fff;
 }
+textarea.transparent:-moz-input-placeholder,
 input.transparent:-moz-input-placeholder,
 button.transparent:-moz-input-placeholder {
   color: #fff;
 }
+textarea.transparent:-ms-input-placeholder,
 input.transparent:-ms-input-placeholder,
 button.transparent:-ms-input-placeholder {
   color: #fff;
