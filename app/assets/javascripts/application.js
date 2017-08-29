@@ -17,7 +17,7 @@
 //= require bootstrap
 //= require jquery.flexslider-min
 //= require lightbox
-//= require masonry/jquery.masonry
+//= require masonry/masonry.min
 //= require twitterfetcher-17.0.0.min
 //= require jquery.mb.YTPlayer-3.0.20.min
 //= require smooth-scroll.min

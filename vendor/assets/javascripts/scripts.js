@@ -29,12 +29,16 @@ $(document).ready(function() {
       offset = offset*1;
     }
 
-    smoothScroll.init({
-      selector: '.inner-link',
-      selectorHeader: null,
-      speed: 750,
-      easing: 'easeInOutCubic',
-      offset: offset
+    new SmoothScroll('.inner-link', {
+    	// Selectors
+    	header: null, // Selector for fixed headers (must be a valid CSS selector)
+
+    	// Speed & Easing
+    	speed: 750, // Integer. How fast to complete the scroll in milliseconds
+    	offset: offset, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
+    	easing: 'easeInOutCubic', // Easing pattern to use
+
+      after: function () { console.log('after'); }
     });
   }
 
@@ -139,21 +143,21 @@ $(document).ready(function() {
     $(this).toggleClass('active');
   });
 
-  $('.menu li').click(function(e) {
-    if (!e) e = window.event;
-    e.stopPropagation();
-    if ($(this).find('ul').length) {
-      $(this).toggleClass('toggle-sub');
-    } else {
-      $(this).parents('.toggle-sub').removeClass('toggle-sub');
-    }
-  });
-
-  $('.menu li a').click(function() {
-    if ($(this).hasClass('inner-link')){
-      $(this).closest('.nav-bar').removeClass('nav-open');
-    }
-  });
+  // $('.menu li').click(function(e) {
+  //   if (!e) e = window.event;
+  //   e.stopPropagation();
+  //   if ($(this).find('ul').length) {
+  //     $(this).toggleClass('toggle-sub');
+  //   } else {
+  //     $(this).parents('.toggle-sub').removeClass('toggle-sub');
+  //   }
+  // });
+  //
+  // $('.menu li a').click(function() {
+  //   if ($(this).hasClass('inner-link')){
+  //     $(this).closest('.nav-bar').removeClass('nav-open');
+  //   }
+  // });
 
   $('.module.widget-handle').click(function() {
     $(this).toggleClass('toggle-widget-handle');
