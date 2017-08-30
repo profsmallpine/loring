@@ -5,6 +5,7 @@
       <div class="module left">
         <a href="/">
           <%= image_tag 'logo-light', class: 'logo logo-light' %>
+          <%= image_tag 'logo-dark', class: 'logo logo-dark' %>
         </a>
       </div>
       <div class="module widget-handle offscreen-toggle right visible-sm visible-xs">
@@ -21,10 +22,10 @@
                 <li>
                   <ul>
                     <li>
-                      <%= link_to 'FAQ', faq_path %>
+                      <%= link_to 'FAQ', faq_path, class: 'color-white' %>
                     </li>
                     <li>
-                      <%= link_to 'Videos', videos_path %>
+                      <%= link_to 'Videos', videos_path, class: 'color-white' %>
                     </li>
                   </ul>
                 </li>
@@ -38,6 +39,9 @@
             </li>
             <li>
               <a href="#shows" class="inner-link">Shows</a>
+            </li>
+            <li>
+              <a href="#clients" class="inner-link">Clients</a>
             </li>
             <li>
               <a href="#advantage" class="inner-link">Advantage</a>
@@ -107,6 +111,11 @@
           <li class="fade-on-hover">
             <a href="#shows" class="inner-link">
               <h5 class="uppercase mb8">Shows</h5>
+            </a>
+          </li>
+          <li class="fade-on-hover">
+            <a href="#clients" class="inner-link">
+              <h5 class="uppercase mb8">Clients</h5>
             </a>
           </li>
           <li class="fade-on-hover">
