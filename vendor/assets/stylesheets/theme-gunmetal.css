@@ -566,7 +566,7 @@ ul.lead li {
   color: #e31d3b !important;
 }
 .color-white {
-  color: #fff;
+  color: #fff !important;
 }
 /*!---------- 5. SECTIONS ----------*/
 section,
@@ -1392,9 +1392,8 @@ nav .cart-overview a {
   }
   .module.widget-handle {
     border-left: none;
-    border-top: 1px solid #ccc;
-    line-height: 40px;
-    min-height: 40px;
+    line-height: 56px;
+    min-height: 54px;
   }
   .module.widget-handle .menu {
     line-height: 40px;
@@ -1557,7 +1556,7 @@ nav.transparent.fixed .logo-light {
 nav.transparent.fixed .logo-dark {
   display: inline;
 }
-nav.transparent.fixed .menu > li > a,
+nav.transparent.fixed .menu > li a,
 nav.transparent.fixed .module.widget-handle i {
   color: #292929;
 }
@@ -1568,7 +1567,7 @@ nav.transparent.fixed .menu > .has-dropdown:after {
 nav.transparent.fixed .module.widget-handle {
   border-left: 1px solid #ccc;
 }
-nav.transparent.fixed .menu > li > a,
+nav.transparent.fixed .menu > li a,
 nav.transparent.fixed .module.widget-handle i {
   opacity: .5;
 }
@@ -1740,6 +1739,7 @@ input[type="password"] {
 .image-bg.bg-light button.transparent {
   border-color: #292929;
 }
+textarea.transparent,
 input.transparent,
 button.transparent {
   background: none;
@@ -1789,18 +1789,22 @@ textarea:focus {
   color: #777;
   font-size: 11px;
 }
+textarea.transparent::-webkit-input-placeholder,
 input.transparent::-webkit-input-placeholder,
 button.transparent::-webkit-input-placeholder {
   color: #fff;
 }
+textarea.transparent::-moz-input-placeholder,
 input.transparent::-moz-input-placeholder,
 button.transparent::-moz-input-placeholder {
   color: #fff;
 }
+textarea.transparent:-moz-input-placeholder,
 input.transparent:-moz-input-placeholder,
 button.transparent:-moz-input-placeholder {
   color: #fff;
 }
+textarea.transparent:-ms-input-placeholder,
 input.transparent:-ms-input-placeholder,
 button.transparent:-ms-input-placeholder {
   color: #fff;
