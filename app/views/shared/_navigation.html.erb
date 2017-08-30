@@ -49,15 +49,12 @@
               </li>
             <% else %>
               <li>
-                <!-- <a href="<%=  %>">Home</a> -->
                 <%= link_to 'Home', root_path %>
               </li>
               <li>
-                <!-- <a href="#advantage">FAQ</a> -->
                 <%= link_to 'FAQ', faq_path %>
               </li>
               <li>
-                <!-- <a href="#advantage">Videos</a> -->
                 <%= link_to 'Videos', videos_path %>
               </li>
             <% end %>
@@ -108,36 +105,64 @@
           <%= image_tag 'logo-light', class: 'image-xs mb40 mb-xs-24' %>
         </a>
         <ul class="mb40 mb-xs-24">
-          <li class="fade-on-hover">
-            <a href="#top" class="inner-link">
-              <h5 class="uppercase mb8">Home</h5>
-            </a>
-          </li>
-          <li class="fade-on-hover">
-            <a href="#about" class="inner-link">
-              <h5 class="uppercase mb8">About</h5>
-            </a>
-          </li>
-          <li class="fade-on-hover">
-            <a href="#testimonials" class="inner-link">
-              <h5 class="uppercase mb8">Testimonials</h5>
-            </a>
-          </li>
-          <li class="fade-on-hover">
-            <a href="#shows" class="inner-link">
-              <h5 class="uppercase mb8">Shows</h5>
-            </a>
-          </li>
-          <li class="fade-on-hover">
-            <a href="#clients" class="inner-link">
-              <h5 class="uppercase mb8">Clients</h5>
-            </a>
-          </li>
-          <li class="fade-on-hover">
-            <a href="#advantage" class="inner-link">
-              <h5 class="uppercase mb8">Advantage</h5>
-            </a>
-          </li>
+          <% if current_page?(action: 'home') %>
+            <li class="fade-on-hover">
+              <a href="#top" class="inner-link">
+                <h5 class="uppercase mb8">Home</h5>
+              </a>
+            </li>
+            <li class="fade-on-hover">
+              <a href="#about" class="inner-link">
+                <h5 class="uppercase mb8">About</h5>
+              </a>
+            </li>
+            <li class="fade-on-hover">
+              <a href="#testimonials" class="inner-link">
+                <h5 class="uppercase mb8">Testimonials</h5>
+              </a>
+            </li>
+            <li class="fade-on-hover">
+              <a href="#shows" class="inner-link">
+                <h5 class="uppercase mb8">Shows</h5>
+              </a>
+            </li>
+            <li class="fade-on-hover">
+              <a href="#clients" class="inner-link">
+                <h5 class="uppercase mb8">Clients</h5>
+              </a>
+            </li>
+            <li class="fade-on-hover">
+              <a href="#advantage" class="inner-link">
+                <h5 class="uppercase mb8">Advantage</h5>
+              </a>
+            </li>
+            <li class="fade-on-hover">
+              <%= link_to faq_path do %>
+                <h5 class="uppercase mb8">FAQ</h5>
+              <% end %>
+            </li>
+            <li class="fade-on-hover">
+              <%= link_to videos_path do %>
+                <h5 class="uppercase mb8">Videos</h5>
+              <% end %>
+            </li>
+          <% else %>
+            <li class="fade-on-hover">
+              <%= link_to root_path do %>
+                <h5 class="uppercase mb8">Home</h5>
+              <% end %>
+            </li>
+            <li class="fade-on-hover">
+              <%= link_to faq_path do %>
+                <h5 class="uppercase mb8">FAQ</h5>
+              <% end %>
+            </li>
+            <li class="fade-on-hover">
+              <%= link_to videos_path do %>
+                <h5 class="uppercase mb8">Videos</h5>
+              <% end %>
+            </li>
+          <% end %>
         </ul>
         <p class="fade-half">
           PO Box 1012
