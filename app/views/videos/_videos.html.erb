@@ -1,0 +1,28 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <input type="text" placeholder="Search videos..." data-toggle="hideseek" data-list=".tags">
+      </div>
+    </div>
+
+    <div class="row">
+      <% @videos.each do |key, video_array| %>
+        <div class="col-xs-12">
+          <div class="widget">
+            <h6 class="title"><%= key %></h6>
+            <hr>
+            <ul class="tags">
+              <% video_array.each do |video| %>
+                <li>
+                  <%= link_to video[:name], video_path(video[:id]), class: 'btn btn-sm'  %>
+                </li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  <!--end of container-->
+</section>

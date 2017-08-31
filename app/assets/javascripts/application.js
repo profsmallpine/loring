@@ -21,4 +21,5 @@
 //= require jquery.mb.YTPlayer-3.0.20.min
 //= require smooth-scroll.min
 //= require parallax
+//= require jquery.hideseek-0.8.0.min
 //= require scripts

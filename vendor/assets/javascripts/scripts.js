@@ -36,9 +36,7 @@ $(document).ready(function() {
     	// Speed & Easing
     	speed: 750, // Integer. How fast to complete the scroll in milliseconds
     	offset: offset, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
-    	easing: 'easeInOutCubic', // Easing pattern to use
-
-      after: function () { console.log('after'); }
+    	easing: 'easeInOutCubic' // Easing pattern to use
     });
   }
 

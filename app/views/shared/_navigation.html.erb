@@ -14,7 +14,7 @@
       <div class="module-group right">
         <div class="module left">
           <ul class="menu">
-            <% if current_page?(action: 'home') %>
+            <% if current_page?(action: 'home', controller: 'pages') %>
               <li class="has-dropdown">
                 <a href="#">
                   Home
@@ -105,7 +105,7 @@
           <%= image_tag 'logo-light', class: 'image-xs mb40 mb-xs-24' %>
         </a>
         <ul class="mb40 mb-xs-24">
-          <% if current_page?(action: 'home') %>
+          <% if current_page?(action: 'home', controller: 'pages') %>
             <li class="fade-on-hover">
               <a href="#top" class="inner-link">
                 <h5 class="uppercase mb8">Home</h5>
