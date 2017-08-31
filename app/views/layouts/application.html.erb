@@ -9,7 +9,10 @@
   </head>
 
   <body class="scroll-assist">
-    <%= yield %>
+    <%= render "shared/navigation" %>
+    <div class="main-container">
+      <%= yield %>
+    </div>
     <%= javascript_include_tag 'application' %>
   </body>
 </html>

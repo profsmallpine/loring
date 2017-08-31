@@ -17,5 +17,6 @@ module App
 
     # User added config
     config.action_controller.page_cache_directory = "#{Rails.root}/public/cached_pages"
+    config.exceptions_app = self.routes
   end
 end
