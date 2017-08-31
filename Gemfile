@@ -21,6 +21,9 @@ gem 'jquery-rails'
 gem 'lightbox2-rails'
 gem 'masonry-rails'
 
+# User added gems
+gem 'actionpack-page_caching'
+
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

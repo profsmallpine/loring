@@ -2527,6 +2527,9 @@ button[type="submit"] .form-loading {
   margin-bottom: 0;
 }
 /*!---------- 16. BREADCRUMBS ----------*/
+.breadcrumb > .active {
+  color: #777777 !important;
+}
 .breadcrumb {
   margin-bottom: 24px;
 }
