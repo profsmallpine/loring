@@ -22,9 +22,11 @@
                 <ul class="mega-menu">
                   <li>
                     <ul>
+                      <% if false %>
                       <li>
                         <%= link_to 'FAQ', faq_path, class: 'color-white' %>
                       </li>
+                      <% end %>
                       <li>
                         <%= link_to 'Videos', videos_path, class: 'color-white' %>
                       </li>
@@ -55,9 +57,11 @@
               <li>
                 <%= link_to 'Home', root_path %>
               </li>
+              <% if false %>
               <li>
                 <%= link_to 'FAQ', faq_path %>
               </li>
+              <% end %>
               <li>
                 <%= link_to 'Videos', videos_path %>
               </li>
@@ -148,11 +152,13 @@
                 <h5 class="uppercase mb8">Advantage</h5>
               </a>
             </li>
+            <% if false %>
             <li class="fade-on-hover">
               <%= link_to faq_path do %>
                 <h5 class="uppercase mb8">FAQ</h5>
               <% end %>
             </li>
+            <% end %>
             <li class="fade-on-hover">
               <%= link_to videos_path do %>
                 <h5 class="uppercase mb8">Videos</h5>
@@ -164,11 +170,13 @@
                 <h5 class="uppercase mb8">Home</h5>
               <% end %>
             </li>
+            <% if false %>
             <li class="fade-on-hover">
               <%= link_to faq_path do %>
                 <h5 class="uppercase mb8">FAQ</h5>
               <% end %>
             </li>
+            <% end %>
             <li class="fade-on-hover">
               <%= link_to videos_path do %>
                 <h5 class="uppercase mb8">Videos</h5>
