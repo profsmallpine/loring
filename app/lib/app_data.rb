@@ -302,7 +302,7 @@ class AppData
       {
         id: 59,
         name: "Best Walnuts – 2x Upgrade Helius",
-        url: "https://vimeo.com/70632736"
+        url: "https://vimeo.com/239136905"
       },
       {
         id: 60,
@@ -317,7 +317,7 @@ class AppData
       {
         id: 62,
         name: "Best Peanuts Helius P",
-        url: "https://vimeo.com/70632656"
+        url: "https://vimeo.com/239137676"
       },
       {
         id: 63,
